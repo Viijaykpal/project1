@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Video Share - Upload</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <h1>Mini Video Share</h1>
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/upload.html" class="active">Upload</a>
+      </nav>
+    </header>
+
+    <main class="container">
+      <section class="card upload-card">
+        <h2>Upload Video</h2>
+        <form id="uploadForm">
+          <label>
+            Title
+            <input type="text" name="title" required />
+          </label>
+
+          <label>
+            Description
+            <textarea name="description" rows="4" placeholder="Write a short description..."></textarea>
+          </label>
+
+          <label>
+            Video File
+            <input type="file" name="video" accept="video/*" required />
+          </label>
+
+          <label>
+            Thumbnail
+            <input type="file" name="thumbnail" accept="image/*" />
+          </label>
+
+          <button type="submit">Upload Video</button>
+          <p id="uploadMessage" class="upload-message"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="/js/upload.js"></script>
+  </body>
+</html>
